@@ -5,7 +5,8 @@ public class Headphones implements AudioOutput {
 
     @Override
     public boolean initialize() {
-      
+        initialized = true;
+        return true;
     }
 
     @Override
@@ -20,7 +21,7 @@ public class Headphones implements AudioOutput {
 
     @Override
     public String getDeviceName() {
-       
+        return "Headphones";
     }
 }
 

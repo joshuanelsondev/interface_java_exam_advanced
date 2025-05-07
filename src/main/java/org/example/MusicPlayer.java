@@ -8,27 +8,26 @@ public class MusicPlayer {
 
 
     public MusicPlayer() {
-      
+
     }
 
 
     public void setAudioSource(AudioSource source) {
-     
+        this.source = source;
     }
 
 
     public void setAudioOutput(AudioOutput output) {
-    
+        this.output = output;
     }
 
 
     public void setAudioFormat(AudioFormat format) {
-    
+        this.format = format;
     }
 
 
     public void playTrack(String trackId) {
-  
     }
 
 

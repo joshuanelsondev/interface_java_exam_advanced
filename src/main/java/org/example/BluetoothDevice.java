@@ -5,12 +5,13 @@ public class BluetoothDevice implements AudioOutput {
     private boolean initialized;
 
     public BluetoothDevice(String deviceName) {
-     
+         this.deviceName = deviceName;
     }
 
     @Override
     public boolean initialize() {
-      
+        initialized = true;
+        return true;
     }
 
     @Override
@@ -25,6 +26,6 @@ public class BluetoothDevice implements AudioOutput {
 
     @Override
     public String getDeviceName() {
-        
+        return "Bluetooth: " + this.deviceName;
     }
 }
